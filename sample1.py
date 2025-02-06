@@ -11,18 +11,7 @@ option = st.selectbox(
 
 keyword = option
 
-if option == "富山":
-	filtered_df = df[df['料金所'].str.contains(keyword)]
-	st.write(filtered_df)
-
-if option == "金沢":
-	filtered_df = df[df['料金所'].str.contains(keyword)]
-	st.write(filtered_df)
-
-if option == "福井":
-	filtered_df = df[df['料金所'].str.contains(keyword)]
-	st.write(filtered_df)
-
-if option == "敦賀":
-	filtered_df = df[df['料金所'].str.contains(keyword)]
-	st.write(filtered_df)
+with open('sample.txt', 'r', encoding='utf-8') as file:
+    for line in file:
+        if keyword in line:
+            st.writeline.strip())

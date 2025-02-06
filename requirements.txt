@@ -1,0 +1,9 @@
+requests
+customtkinter
+flet
+streamlit
+dash
+opencv-python
+openai
+langchain
+chromadb
